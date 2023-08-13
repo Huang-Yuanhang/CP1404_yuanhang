@@ -16,7 +16,7 @@ COLORS = {
 while True:
     user_input = input("Enter a color name (or blank to quit): ").lower()
 
-    if not user_input:
+    if user_input == "":
         break
 
     color_code = COLORS.get(user_input, "Color not found")
