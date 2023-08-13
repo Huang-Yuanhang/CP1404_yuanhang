@@ -11,12 +11,8 @@ COLORS = {
     "azure1": "#f0ffff"
 }
 
-# Main program loop
-while True:
-    user_input = input("Enter a color name (or blank to quit): ").lower()
-
-    if user_input == "":
-        break
-
+user_input = input("Enter a color name (or blank to quit): ").lower()
+while user_input != "":
     color_code = COLORS.get(user_input, "Color not found")
     print(f"The color code for {user_input} is {color_code}")
+    user_input = input("Enter a color name (or blank to quit): ").lower()
