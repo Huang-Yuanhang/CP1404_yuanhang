@@ -1,4 +1,3 @@
-# Define a constant dictionary of color names and their corresponding codes
 COLORS = {
     "absolute zero": "#0048ba",
     "acid green": "#b0bf1a",
