@@ -1,6 +1,6 @@
 def wimbledon_data(filename):
     champions = {}
-    countries = set()
+    countries = []
 
     with open(filename, "r", encoding="utf-8-sig") as in_file:
 
@@ -14,7 +14,8 @@ def wimbledon_data(filename):
             country = parts[1]
 
             champions[champion] = champions.get(champion, 0) + 1
-            countries.add(country)
+            if country not in countries:
+                countries.append(country)
 
     return champions, countries
 
@@ -41,3 +42,5 @@ def main():
 
 
 main()
+
+
