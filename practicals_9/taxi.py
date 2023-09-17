@@ -2,7 +2,7 @@
 CP1404 Practical 09
 Car class
 """
-from practicals_9 import Car
+from practicals_9.car import Car
 
 
 class Taxi(Car):
